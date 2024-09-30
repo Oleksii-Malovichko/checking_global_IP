@@ -42,3 +42,6 @@ def main():
     os.system('sqlite3 /home/kali/.mozilla/firefox/r1ezo19v.default-esr/cookies.sqlite "DELETE FROM moz_cookies;"')
 
 main() # xset dpms force off
+""" git remote set-url origin git@github.com:Oleksii-Malovichko/checking_global_IP.git
+git remote -v 
+git push"""
