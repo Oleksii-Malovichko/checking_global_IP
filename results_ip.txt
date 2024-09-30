@@ -1,0 +1,108 @@
+
+	2024-09-29 19:46:58
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-29 19:59:06
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-29 21:00:01
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-29 21:08:42
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-29 22:00:11
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-29 23:01:01
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-30 00:01:13
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-30 01:01:13
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-30 02:01:31
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-30 03:02:01
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-30 04:02:41
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-30 05:03:01
+Result of ifconfig.me:	 194.140.112.212
+Result of ipinfo.io/ip:	 194.140.112.212
+
+	2024-09-30 06:04:01
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 07:04:11
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 08:04:51
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 09:05:01
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 10:05:21
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 11:06:01
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 12:06:13
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 13:06:31
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 14:07:01
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 15:07:51
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 16:08:01
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 17:09:01
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 18:09:01
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 19:09:01
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
+
+	2024-09-30 20:09:31
+Result of ifconfig.me:	 194.140.112.228
+Result of ipinfo.io/ip:	 194.140.112.228
