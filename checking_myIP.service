@@ -1,7 +1,0 @@
-[Unit]
-Description=My Script Service
-
-[Service]
-Type=oneshot
-ExecStart=/home/kali/scripts/know_ch_ip.py
-

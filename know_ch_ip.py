@@ -1,47 +1,45 @@
 #!/usr/bin/env python3
 import time
 import subprocess
-import os
+import shutil
+import sys
 
-def check_first():
-    result = subprocess.run(['curl', 'ifconfig.me'], capture_output=True, text=True)
-    if result.returncode == 0:
-        output = result.stdout.strip()
-        return output
-    else:
-        return 1
+LOG_FILE = "results_ip.txt"
 
-def check_second():
-    result = subprocess.run(['curl', 'ipinfo.io/ip'], capture_output=True, text=True)
-    if result.returncode == 0:
-        output = result.stdout.strip()
-        return output
-    else:
-        return 1
+""" Check if curl is installed and available """
+def check_curl() -> None:
+     if shutil.which("curl") is None:
+          print("Error: curl is not installed or not found in PATH", file=sys.stderr)
+          sys.exit(1)
+
+""" Check the global IP due the specified service """
+def check_ip(url: str) -> str | None:
+    try:
+        result = subprocess.run(['curl', '-s', "--max-time", "5", url], capture_output=True, text=True, check=True)
+        return result.stdout.strip()
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+        return None
+
+""" Log the result with a timestamp """
+def log_results(result1: str | None, result2: str | None):
+    formatted_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
+    with open(LOG_FILE, "a") as f:
+          f.write(f"\n\t{formatted_time}\n")
+          if result1:
+               f.write(f'Result of "ifconfig.me":\t {result1}\n')
+          else:
+               f.write("Error with ifconfig.me\n")
+          if result2:
+               f.write(f'Result of "ipinfo.io/ip":\t {result2}\n')
+          else:
+               f.write("Error with ipinfo.io/ip\n")
+
 
 def main():
-    local_time = time.localtime(time.time())
-    formatted_time = time.strftime('%Y-%m-%d %H:%M:%S', local_time)
-    os.system(f'echo "\n\t{str(formatted_time)}" >> /home/kali/scripts/results_ip.txt')
+    check_curl()
+    result1 = check_ip("ifconfig.me")
+    result2 = check_ip("ipinfo.io/ip")
+    log_results(result1, result2)
 
-    result1 = check_first()
-    result2 = check_second()
-    if (result1 or result2):
-        if result1 != 1:
-            os.system(f'echo "Result of "ifconfig.me":\t {str(result1)}" >> /home/kali/scripts/results_ip.txt')
-        else:
-            os.system('echo "Error with ifconfig.me" >> /home/kali/scripts/results_ip.txt')
-        if result2 != 1:
-            os.system(f'echo "Result of "ipinfo.io/ip":\t {str(result2)}" >> /home/kali/scripts/results_ip.txt')
-        else:
-            os.system('echo "Error with ipinfo.io/ip" >> /home/kali/scripts/results_ip.txt')
-    else:
-        os.system('echo "Global error" >> /home/kali/scripts/results_ip.txt')
-
-    os.system('pkill firefox')
-    os.system('sqlite3 /home/kali/.mozilla/firefox/r1ezo19v.default-esr/cookies.sqlite "DELETE FROM moz_cookies;"')
-
-main() # xset dpms force off
-""" git remote set-url origin git@github.com:Oleksii-Malovichko/checking_global_IP.git
-git remote -v 
-git push"""
+if __name__ == "__main__":
+      main()

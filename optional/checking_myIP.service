@@ -1,0 +1,6 @@
+[Unit]
+Description=Check global IP
+
+[Service]
+Type=oneshot
+ExecStart=/full/path/to/know_ch_ip.py

@@ -1,0 +1,6 @@
+# Ignore logs
+results_ip.txt
+
+# Ignore Python cache
+__pycache__/
+*.рус
